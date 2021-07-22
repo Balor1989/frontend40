@@ -10,9 +10,7 @@
 body {
   font-family: 'Open sans', sans-serif;
 }
-.header-box {
-  background-color: lightslategrey;
-}
+
 ul {
   list-style: none;
   padding: 0;
@@ -37,24 +35,46 @@ h2.section-title {
   font-size: 18px;
   line-height: 1.67;
 }
+.nav-box {
+  display: flex;
+  outline: 2px solid skyblue;
+}
 .nav-links {
   display: flex;
+  background-color: slategrey;
 }
 a.nav-link {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   color: #fff;
 }
+.social-link {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
 a.nav-link:hover,
-a.nav-link:focus {
+a.nav-link:focus,
+.social-link:hover,
+.social-link:focus {
   color: var(--primary-color);
+}
+div.contacts-block a {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 p.hero-description {
   font-weight: normal;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-primary-lighten);
 }
