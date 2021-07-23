@@ -125,3 +125,16 @@ p.hero-description {
   letter-spacing: 0.02em;
   color: var(--text-secondary);
 }
+.number-box p {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+.number-box span {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--text-primary);
+}
