@@ -4,6 +4,7 @@
 
   --text-primary: #303030;
   --text-secondary: #9da4bd;
+  --text-secondary-lighten: #ffffff;
   --text-primary-lighten: #555555;
 }
 
@@ -18,6 +19,14 @@ ul {
 }
 a {
   text-decoration: none;
+}
+.suptitle-primary {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .suptitle-secondary {
   font-weight: 600;
@@ -48,7 +57,7 @@ a.nav-link {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: var(--text-secondary-lighten);
 }
 .social-link {
   color: var(--text-primary);
@@ -63,7 +72,7 @@ a.nav-link:focus,
 .social-link:focus {
   color: var(--primary-color);
 }
-div.contacts-block a {
+div.contacts-block:first-child {
   color: var(--text-primary);
   font-weight: 600;
   font-size: 12px;
@@ -71,10 +80,28 @@ div.contacts-block a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+div.contacts-block {
+  background-color: slategrey;
+}
 p.hero-description {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-primary-lighten);
+}
+.primary-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-secondary-lighten);
+  border: 1px solid var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+.darken {
+  color: var(--text-primary);
 }
