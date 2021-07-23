@@ -1,3 +1,7 @@
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-color: #ff6c00;
   --secondary-color: #191c26;
@@ -14,11 +18,14 @@ body {
 
 ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+}
+p {
+  margin: 0;
 }
 .suptitle-primary {
   color: var(--text-primary);
@@ -31,8 +38,10 @@ a {
 .suptitle-secondary {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
-  color: var(--text-secondary);
+  line-height: 1.36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 }
 h2.section-title {
   font-family: raleway;
@@ -104,4 +113,15 @@ p.hero-description {
 }
 .darken {
   color: var(--text-primary);
+}
+.price-box {
+  display: flex;
+}
+.price-item {
+  display: flex;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
 }
