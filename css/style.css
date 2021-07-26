@@ -53,6 +53,13 @@ h2.section-title {
   font-size: 18px;
   line-height: 1.67;
 }
+.logo-img {
+  margin: 32px;
+}
+.nav-holder {
+  display: flex;
+  align-items: center;
+}
 .nav-box {
   display: flex;
   outline: 2px solid skyblue;
@@ -67,6 +74,7 @@ a.nav-link {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--text-secondary-lighten);
+  margin-left: 40px;
 }
 .social-link {
   color: var(--text-primary);
@@ -91,7 +99,20 @@ div.contacts-block:first-child {
 }
 div.contacts-block {
   background-color: slategrey;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
+.phone-link {
+  text-decoration: none;
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary-lighten);
+}
+
 p.hero-description {
   font-weight: normal;
   font-size: 18px;
