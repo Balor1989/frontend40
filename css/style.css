@@ -74,15 +74,12 @@ h2.section-title {
 }
 .nav-box {
   display: flex;
-  outline: 2px solid skyblue;
-  position: fixed;
   top: 0;
   width: 100%;
   padding: 30px 55px 0 55px;
 }
 .nav-links {
   display: flex;
-  background-color: slategrey;
 }
 a.nav-link {
   font-weight: 600;
@@ -271,4 +268,36 @@ p.hero-description {
 .master-social-link svg {
   height: 20px;
   fill: #303030;
+}
+footer {
+  width: 100%;
+  height: 640px;
+  background-color: var(--secondary-color);
+  display: flex;
+  background-image: linear-gradient(rgba(23, 26, 36, 0.2), rgba(23, 26, 36, 0.2)),
+    url(../Images/footer-image.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+.footer-form,
+.footer-contacts {
+  width: 50%;
+  height: inherit;
+}
+.copyright {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 55px;
+}
+.copy-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--text-secondary);
 }
