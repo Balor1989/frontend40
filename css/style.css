@@ -272,6 +272,7 @@ p.hero-description {
 footer {
   width: 100%;
   height: 640px;
+  padding: 0 55px;
   background-color: var(--secondary-color);
   display: flex;
   background-image: linear-gradient(rgba(23, 26, 36, 0.2), rgba(23, 26, 36, 0.2)),
@@ -280,10 +281,41 @@ footer {
   background-repeat: no-repeat;
   background-size: 50% 100%;
 }
+.footer-title {
+  margin: 0;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary-lighten);
+}
+.adress {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-secondary);
+}
+.contact-link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-secondary);
+}
 .footer-form,
 .footer-contacts {
   width: 50%;
   height: inherit;
+}
+.footer-contacts {
+  padding: 130px 105px 130px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .copyright {
   width: 100%;
